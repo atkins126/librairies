@@ -1,39 +1,74 @@
-# librairies
-Unités et composants réutilisables, boite à outils pour Delphi
+# My toolbox for Delphi projects
 
-Vous trouverez ici des unités contenant des procédures, fonctions, composants et classes utilisés dans mes projets. Ils peuvent également vous servir dans les vôtres.
+[Cette page en français.](LISEZMOI.md)
 
-Ces sources seront mis à jour en fonction de mes besoins et de vos suggestions ou demandes.
+This repository contains functions, procedures and classes to use in Delphi projects (console, VCL, FireMonkey and others). It's my "everything reuseable things" toolbox.
 
-Les sources présents ici sont liés au blog https://developpeur-pascal.fr et sont expliqués à travers ses nombreux articles de programmation en Pascal Object avec Delphi.
+The units to be used in your projects can be found in the "src" folder. Some features are [explained on my blog](https://developpeur-pascal.fr/librairies-publiques.html) or [have been coded live on Twitch](https://serialstreameur.fr/librairies-et-composants.html).
 
-Ces fichiers sont fournis en l'état, sans aucune garantie.
-En utilisant ces sources vous en acceptez toute responsabilité quant aux conséquences d'un éventuel dysfonctionnement, d'un piratage ou de pertes de données.
+Examples of use in the form of VCL or FireMonkey projects are available in the "samples" subfolder.
 
-Sauf mention contraire je reste le propriétaire des droits intellectuels concernant ces fichiers.
-Vous n'avez pas le droit de les revendre mais pouvez les utiliser dans vos projets personnels ou commerciaux.
-Vous ne pouvez pas diffuser ces sources en vous en attribuant la paternité ni sans mettre un lien vers ce compte GitHub ou le site https://developpeur-pascal.fr.
+Many projects using this library are available as open source on [my GitHub account](https://github.com/DeveloppeurPascal/). Have a look in particular at the projects listed on [this repository](https://github.com/DeveloppeurPascal/DevPas-WorkingPrograms-Pack) or [this one](https://github.com/DeveloppeurPascal/DevPas-Games-Pack). More generic Delphi projects examples are [available here](https://github.com/DeveloppeurPascal/Delphi-samples).
 
------
+This code repository contains a project developed in Object Pascal language under Delphi. You don't know what Delphi is and where to download it ? You'll learn more [on this web site](https://delphi-resources.developpeur-pascal.fr/).
 
-Vous pouvez [soutenir les projets sur lesquels je travaille](https://vasur.fr/sponsoropensource) et en profiter pour accéder à tout ce que je fais en ligne. Chaque abonnement compte pour me donner du temps pour travailer sur ces projets open source et produire les articles et les vidéos auxquels vous aurez accès depuis [Zone Abo](https://zone-abo.fr), [Serial Streameur](https://serialstreameur.fr) et [Apprendre Delphi](https://apprendre-delphi.fr).
+## Talks and conferences
 
------
+### Twitch
 
-Ce projet fait partie du "DevPas Components Pack" qui permet d'installer tous mes composants et librairies en une fois.
-https://github.com/DeveloppeurPascal/DevPas-Components-Pack
+Follow my development streams of software, video games, mobile applications and websites on [my Twitch channel](https://www.twitch.tv/patrickpremartin) or as replays on [Serial Streameur](https://serialstreameur.fr) mostly in French.
 
------
+## Source code installation
 
-Si vous ne connaissez pas Delphi et le langage Pascal, profitez de la version Academic (pour les étudiants, enseignants et établissements d'enseignement) ou Community Edition (gratuite pour une utilisation personnelle) disponibles chez Embarcadero (rubrique "outils gratuits").
-En entreprise vous pouvez aussi tester Delphi avec la version d'évaluation.
-https://www.embarcadero.com/products/delphi
+To download this code repository, we recommend using "git", but you can also download a ZIP file directly from [its GitHub repository](https://github.com/DeveloppeurPascal/librairies).
 
-Cette formation en ligne gratuite vous apprendra les bases de la programmation avec le Pascal et Delphi même si vous n'avez jamais appris à programmer :
-https://apprendre-delphi.fr/apprendre-la-programmation-avec-delphi/
+The project's technical documentation, generated with [DocInsight](https://devjetsoftware.com/products/documentation-insight/), is available in the ./docs folder and on [GitHub Pages](https://developpeurpascal.github.io/librairies). Further information and related links are available on [the project website](https://librairies.developpeur-pascal.fr).
 
-Des conférences en ligne et des webinaires (points techniques sur des sujets précis) sont organisés régulièrement. Consultez [le planning de ces webinaires](https://developpeur-pascal.fr/webinaires.html) et regardez les [rediffusions des webinaires Delphi](https://serialstreameur.fr/webinaires-delphi.php).
+If you need explanations or help in using this project in your own, please [contact me](https://developpeur-pascal.fr/nous-contacter.php). I can either direct you to an online resource, or offer you assistance on a fee-for-service basis. You can also contact me at a conference or an online presentation.
 
-Des sessions de [live coding sur Twitch](https://www.twitch.tv/patrickpremartin) ou [la chaîne YouTube Developpeur Pascal](https://www.youtube.com/channel/UCk_LmkBB90jdEdmfF77W6qQ) sont également organisées régulièrement. Pour Twitch vous pouvez consulter [le planning hebdomadaire](https://www.twitch.tv/patrickpremartin/schedule). Vous pouvez aussi vous reporter à [cet article](https://developpeur-pascal.fr/livestreams-de-codage-en-direct-avec-delphi.html). Pour les rediffusions de tout ça, rendez-vous simplement dans la [rubrique live coding](https://serialstreameur.fr/live-coding.php) de [Serial Streameur](https://serialstreameur.fr/) où vous trouverez de nombreuses vidéos en français à destination des développeurs de logiciels, applications mobiles, sites web et jeux vidéo.
+## Compatibility
 
-Enfin, si vous préférez la lecture à la vidéo, vous trouverez tous les livres récents publiés sur Delphi et le langage Pascal sur [Delphi Books](https://delphi-books.com)
+As an [Embarcadero MVP](https://www.embarcadero.com/resources/partners/mvp-directory), I benefit from the latest versions of [Delphi](https://www.embarcadero.com/products/delphi) and [C++ Builder](https://www.embarcadero.com/products/cbuilder) in [RAD Studio](https://www.embarcadero.com/products/rad-studio) as soon as they are released. I therefore work with these versions.
+
+Normally, my libraries and components should also run on at least the current version of [Delphi Community Edition](https://www.embarcadero.com/products/delphi/starter).
+
+There's no guarantee of compatibility with earlier versions, even though I try to keep my code clean and avoid using too many of the new ways of writing in it (type inference, inline var and multiline strings).
+
+If you detect any anomalies on earlier versions, please don't hesitate to [report them](https://github.com/DeveloppeurPascal/librairies/issues) so that I can test and try to correct or provide a workaround.
+
+## License to use this code repository and its contents
+
+This source code is distributed under the [AGPL 3.0 or later](https://choosealicense.com/licenses/agpl-3.0/) license.
+
+You are free to use the contents of this code repository anywhere provided :
+* you mention it in your projects
+* distribute the modifications made to the files provided in this AGPL-licensed project (leaving the original copyright notices (author, link to this repository, license) must be supplemented by your own)
+* to distribute the source code of your creations under the AGPL license.
+
+If this license doesn't suit your needs (especially for a commercial project) I also offer [classic licenses for developers and companies](https://librairies.developpeur-pascal.fr).
+
+Some elements included in this repository may depend on third-party usage rights (images, sounds, etc.). They are not reusable in your projects unless otherwise stated.
+
+The source codes of this code repository as well as any compiled version are provided “as is” without warranty of any kind.
+
+## How to ask a new feature, report a bug or a security issue ?
+
+If you want an answer from the project owner the best way to ask for a new feature or report a bug is to go to [the GitHub repository](https://github.com/DeveloppeurPascal/librairies) and [open a new issue](https://github.com/DeveloppeurPascal/librairies/issues).
+
+If you found a security issue please don't report it publicly before a patch is available. Explain the case by [sending a private message to the author](https://developpeur-pascal.fr/nous-contacter.php).
+
+You also can fork the repository and contribute by submitting pull requests if you want to help. Please read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
+## Support the project and its author
+
+If you think this project is useful and want to support it, please make a donation to [its author](https://github.com/DeveloppeurPascal). It will help to maintain the code and binaries.
+
+You can use one of those services :
+
+* [GitHub Sponsors](https://github.com/sponsors/DeveloppeurPascal)
+* Ko-fi [in French](https://ko-fi.com/patrick_premartin_fr) or [in English](https://ko-fi.com/patrick_premartin_en)
+* [Patreon](https://www.patreon.com/patrickpremartin)
+* [Liberapay](https://liberapay.com/PatrickPremartin)
+* [Paypal](https://www.paypal.com/paypalme/patrickpremartin)
+
+or if you speack french you can [subscribe to Zone Abo](https://zone-abo.fr/nos-abonnements.php) on a monthly or yearly basis and get a lot of resources as videos and articles.
