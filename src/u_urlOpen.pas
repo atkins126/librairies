@@ -1,45 +1,45 @@
-﻿/// <summary>
-/// ***************************************************************************
-///
-/// Librairies pour Delphi
-///
-/// Copyright 1990-2024 Patrick Prémartin under AGPL 3.0 license.
-///
-/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-/// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-/// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-/// DEALINGS IN THE SOFTWARE.
-///
-/// ***************************************************************************
-///
-/// This repository contains functions, procedures and classes to use in
-/// Delphi projects (console, VCL, FireMonkey and others). It's my "everything reuseable things" toolbox.
-///
-/// The units to be used in your projects can be found in the "src" folder.
-/// Some features are explained on my blog or have been coded live on Twitch.
-///
-/// Examples of use in the form of VCL or FireMonkey projects are available in
-/// the "samples" subfolder.
-///
-/// ***************************************************************************
-///
-/// Author(s) :
-///      Patrick PREMARTIN
-///
-/// Site :
-///      https://developpeur-pascal.fr/librairies-publiques.html
-///
-/// Project site :
-///      https://github.com/DeveloppeurPascal/librairies
-///
-/// ***************************************************************************
-/// File last update : 28/05/2024 12:19:15
-/// Signature : 62546efcde8a5cca798d483bad205b939f0127c5
-/// ***************************************************************************
-/// </summary>
+﻿(* C2PP
+  ***************************************************************************
+
+  My libraries for Delphi
+
+  Copyright 1990-2025 Patrick Prémartin under AGPL 3.0 license.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+  THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+  DEALINGS IN THE SOFTWARE.
+
+  ***************************************************************************
+
+  This repository contains functions, procedures and classes to use in
+  Delphi projects (console, VCL, FireMonkey and others). It's my "everything reuseable things" toolbox.
+
+  The units to be used in your projects can be found in the "src" folder.
+  Some features are explained on my blog or have been coded live on Twitch.
+
+  Examples of use in the form of VCL or FireMonkey projects are available in
+  the "samples" subfolder.
+
+  ***************************************************************************
+
+  Author(s) :
+  Patrick PREMARTIN
+
+  Site :
+  https://librairies.developpeur-pascal.fr
+
+  Project site :
+  https://github.com/DeveloppeurPascal/librairies
+
+  ***************************************************************************
+  File last update : 2025-05-24T12:33:15.003+02:00
+  Signature : 9d3ddd0e9fe9df60776e0d56e2573fa7a62ef04e
+  ***************************************************************************
+*)
 
 unit u_urlOpen;
 
@@ -52,16 +52,26 @@ procedure url_Open_In_Browser(URL: string);
 implementation
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants
 {$IF Defined(IOS)}
-    , macapi.helpers, iOSapi.Foundation, FMX.helpers.iOS
+  macapi.helpers,
+  iOSapi.Foundation,
+  FMX.helpers.iOS,
 {$ELSEIF Defined(ANDROID)}
-    , Androidapi.JNI.GraphicsContentViewText, Androidapi.helpers
+  Androidapi.JNI.GraphicsContentViewText,
+  Androidapi.JNI.App,
+  Androidapi.JNI.Net,
+  Androidapi.helpers,
 {$ELSEIF Defined(MACOS)}
-    , Posix.Stdlib
+  Posix.Stdlib,
 {$ELSEIF Defined(MSWINDOWS)}
-    , Winapi.ShellAPI, Winapi.Windows
-{$ENDIF};
+  Winapi.ShellAPI,
+  Winapi.Windows,
+{$ENDIF}
+  System.SysUtils,
+  System.Types,
+  System.UITypes,
+  System.Classes,
+  System.Variants;
 
 procedure url_Open_In_Browser(URL: string);
 {$IF Defined(ANDROID)}
